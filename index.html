@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rene Mercado - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Rene Mercado
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          rene.a.mercado.m@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +553316000000
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+		  <a class="topmenu" href="#skills">Habilidades</a>
+          <a class="topmenu" href="#projects">Proyectos</a>
+		  <a class="topmenu" href="#recommendations">Recomendaciones</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="html_finalprojimages/persona.gif" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hola, Mi nombre es !Rene Mercado¡ <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            Soy docente en el area de programación y desarrollo de sistemas y redes de computadoras desde 
+			hace 18 años en el nivel medio superior, cuento con capacitación y desarrollo en varias tecnologias
+			y certificaciones en diversas areas.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>10 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>1 years experience</p>
+        </div>  
+		<div class="skill">
+          <img src="html_finalprojimages/java.png"/>
+          <h6>Java</h6>
+          <p>10 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/androide.png"/>
+          <h6>Android</h6>
+          <p>3 years experience</p>
+        </div>
+		
+		<div class="skill">
+          <img src="html_finalprojimages/CSS3.png"/>
+          <h6>CSS</h6>
+          <p>3 years experience</p>
+        </div>
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Control de inventarios</h3>
+            <ul>
+              <li>Desarrollo de un sistema de control de inventarios basado en java con aplicación de bases de datos en mysql para una institución educativa.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Sistema de examenes en linea</h3>
+            <ul>
+              <li>Implementación de un sistema de examenes en linea para los alumnos de sexto semestre de informatica en cobaej</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Aplicación de censos en movil</h3>
+            <ul>
+              <li>Implementación de un sistema de censos y ecuestas moviles para diversos propositos</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Inspira a tus estudiantes a explorar más allá 
+		  del aula. Anímalos a experimentar con proyectos personales en programación 
+		  y redes para desarrollar habilidades prácticas que complementen su aprendizaje.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Crea un ambiente donde los estudiantes trabajen en equipo. La colaboración en 
+		  proyectos de programación y redes no solo fortalece habilidades técnicas, 
+		  sino también habilidades interpersonales valiosas para su futuro.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Mantente al día con las tendencias tecnológicas. Participa en cursos y talleres 
+		  sobre programación y redes para ofrecer a tus estudiantes la información más relevante y actualizada en el campo.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+			<path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Su mensaje ha sido enviado con exito, muchas gracias por sus comentarios</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
